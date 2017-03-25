@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">BookWorld</string>
+
+
+    <!-- FRAGMENT SCREEN NAMES-->
+    <string name="fragment.bookSearch">Book Search</string>
+    <string name="fragment.bookSearchResults">Book Search Results</string>
+    <string name="fragment.bookDetail">Book Detail</string>
+
+    <!-- GENERIC STRINGS-->
+    <string name="generic.retry">Retry</string>
+    <string name="generic.book">Book</string>
+    <string name="generic.magazine">Magazine</string>
+
+    <!-- BOOK DETAIL FRAGMENT -->
+    <string name="book.detail.descriptionHeader">Description</string>
+    <string name="book.detail.publisherHeader">Publisher</string>
+    <string name="book.detail.publisherSummary" formatted="false">%s in %s</string> <!-- Publisher name, year published-->
+    <string name="book.detail.categoriesHeader">Categories</string>
+    <string name="book.detail.averageRatingHeader">Average Rating</string>
+    <string name="book.detail.miscellaneousHeader">Miscellaneous</string>
+    <string name="book.detail.viewOnGoogleBooksWebsite">View on Google Books</string>
+    <string name="book.detail.miscellaneousSummary" formatted="false">Language: %s\n%d pages</string> <!-- Language: EN NEWLINE 503 pages-->
+    <string name="book.detail.identifierHeader">Identifiers</string>
+    <string name="book.detail.noDescription">Does not have a description at the moment.</string>
+    <string name="book.detail.noCategories">This book does not have any known categories.</string>
+    <string name="book.detail.noIdentifiers">This book does not have any industry identifiers.</string>
+
+    <!-- BOOK SEARCH FRAGMENT -->
+    <string name="book.search.introduction">Use the fields below to search for books.</string>
+    <string name="book.search.author.hint">Author</string>
+    <string name="book.search.bookName.hint">Book name</string>
+    <string name="book.search.bookContainsWord.hint">Contains word, phrase or passage</string>
+    <string name="book.search.isbn.hint">ISBN</string>
+    <string name="book.search.startSearch">Search</string>
+    <string name="book.search.nothingInputted">Please enter some terms to search for</string>
+
+    <!-- ERROR MESSAGES -->
+    <string name="error.network.badConnection">We\'re having difficulty connecting to the server. Please check your internet connection and try again later.</string>
+    <string name="error.no.books">No books could be found with that search.</string>
+    <string name="error.network.unknown" >An unexpected error has occurred.</string>
+    <string name="error.server.unknown" formatted="false" >An unexpected server error has occurred. Status code %s</string>
+
+    <!-- LOADING MESSAGES -->
+    <string name="loading.bookSearch">Looking for books&#8230;</string>
+    <string name="loading.bookDetail">Getting details of book&#8230;</string>
+
+    <!-- IMAGE CONTENT DESCRIPTION -->
+    <string name="book.image.content.description">Book Image</string>
+
+    <!-- INTENT CHOOSER TITLES-->
+    <string name="chooser.choose.internet.browser.app">Choose Browser&#8230;</string>
+
+    <!-- OTHER -->
+    <string name="createdBy">Created By Jones Ruskin</string>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MaterialDesign" />
+
+    <style name="MaterialDesign" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Toolbar style is separate because the colorControlNormal can change other colours of different elements but we only want to change the home back arrow so its applied only on the toolbar only-->
+    <style name="ToolbarStyle" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <!-- All button styles will extend off this one -->
+    <style name="Button.Base.Style" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Yellow button  -->
+    <style name="Button.BlackText.YellowBackground" parent="Button.Base.Style">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <!-- Look in Museum detail, you see these sub headers like TIME & LOCATION -->
+    <style name="TextView.Sub.Header" parent="android:Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/cloudyWhite</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">35dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/lightGrey</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

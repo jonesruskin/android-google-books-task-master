@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.ersen.BookWorld.views.widgets.PlaceholderView
+        android:id="@+id/placeholderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewOnGoogleBooks">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bookshelf1" />
+
+                <ImageView
+                    android:id="@+id/bookImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/book.image.content.description"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/oak"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/bookTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    tools:text="Book Title" />
+
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/bookAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    tools:text="Book Author" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.01"
+                        android:id="@+id/averageBookRating" />
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/ratingCount"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        tools:text="(52)" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView.Sub.Header"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/book.detail.descriptionHeader" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Book Description" />
+
+            <TextView
+                style="@style/TextView.Sub.Header"
+                android:text="@string/book.detail.categoriesHeader" />
+
+            <TextView
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Categories" />
+
+            <TextView
+                style="@style/TextView.Sub.Header"
+                android:text="@string/book.detail.publisherHeader" />
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Publisher Name, Year" />
+
+            <TextView
+                style="@style/TextView.Sub.Header"
+                android:text="@string/book.detail.miscellaneousHeader" />
+
+
+            <TextView
+                android:id="@+id/miscellaneous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Language: EN, 503 pages" />
+
+            <TextView
+                style="@style/TextView.Sub.Header"
+                android:text="@string/book.detail.identifierHeader" />
+
+            <TextView
+                android:id="@+id/identifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="ISBN: 419491891" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/viewOnGoogleBooks"
+        style="@style/Button.BlackText.YellowBackground"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/book.detail.viewOnGoogleBooksWebsite" />
+
+</RelativeLayout>

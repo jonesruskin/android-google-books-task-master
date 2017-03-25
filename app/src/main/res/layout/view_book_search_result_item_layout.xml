@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bookshelf1" />
+
+    <ImageView
+        android:id="@+id/bookImage"
+        android:layout_width="192dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/book.image.content.description"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:text="Book Title" />
+
+        <TextView
+            android:id="@+id/bookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:text="Book Author" />
+
+    </LinearLayout>
+</FrameLayout>
